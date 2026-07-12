@@ -1,9 +1,15 @@
 public abstract class Plan {
-    protected double tarifa;
-    public abstract void obtenerTarifa(String tipo);
-    public void calcularpago(int megas){
-        System.out.println("Megas consumidos : "+megas);
-        System.out.println("tarifa por MB : "+tarifa);
-        System.out.println("Total a pagar : "+(megas*tarifa));
+    protected String nombre;
+    protected float tasa;
+    public abstract void setTasa(String proveedor);
+    public void calculoPago(int datos){
+        System.out.println("Plan : " + nombre);
+        System.out.println("Megas: " + datos);
+        System.out.println("Total: S/ " + (datos*tasa));
     }
-}
+    @Override
+    public String toString(){
+        return nombre + " - " + tasa;
+    }
+    }
+

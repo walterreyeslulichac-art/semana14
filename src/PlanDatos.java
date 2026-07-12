@@ -1,4 +1,4 @@
-public abstract class Plan {
+public abstract class PlanDatos {
     protected String nombre;
     protected float tasa;
     public abstract void setTasa(String proveedor);

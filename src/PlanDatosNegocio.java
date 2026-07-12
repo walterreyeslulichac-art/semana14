@@ -1,4 +1,4 @@
-public class PlanDatosNegocio extends Plan{
+public class PlanDatosNegocio extends PlanDatos {
     public PlanDatosNegocio() {
         nombre = "NEGOCIO";
     }
